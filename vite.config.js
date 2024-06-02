@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
+import basicSsl from '@vitejs/plugin-basic-ssl';
 
 export default defineConfig({
     plugins: [
@@ -7,8 +8,10 @@ export default defineConfig({
             input: ['resources/css/app.css', 'resources/js/app.js'],
             refresh: true,
         }),
+        basicSsl(),
     ],
     server: {
         origin: 'https://laracamp.fly.dev',
+        host: 'laracamp'
       },
 });
