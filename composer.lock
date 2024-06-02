@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0a6e3c5e985fc7375fa674c3cc594a7b",
+    "content-hash": "f7cb23ce76f8e6961d40a8e1a0f3f118",
     "packages": [
         {
             "name": "brick/math",
@@ -1814,6 +1814,154 @@
                 }
             ],
             "time": "2024-01-28T23:22:08+00:00"
+        },
+        {
+            "name": "livewire/livewire",
+            "version": "v3.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/livewire/livewire.git",
+                "reference": "72e900825c560f0e4e620185b26c5441a8914435"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/72e900825c560f0e4e620185b26c5441a8914435",
+                "reference": "72e900825c560f0e4e620185b26c5441a8914435",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^10.0|^11.0",
+                "illuminate/routing": "^10.0|^11.0",
+                "illuminate/support": "^10.0|^11.0",
+                "illuminate/validation": "^10.0|^11.0",
+                "league/mime-type-detection": "^1.9",
+                "php": "^8.1",
+                "symfony/console": "^6.0|^7.0",
+                "symfony/http-kernel": "^6.2|^7.0"
+            },
+            "require-dev": {
+                "calebporzio/sushi": "^2.1",
+                "laravel/framework": "^10.15.0|^11.0",
+                "laravel/prompts": "^0.1.6",
+                "mockery/mockery": "^1.3.1",
+                "orchestra/testbench": "^8.21.0|^9.0",
+                "orchestra/testbench-dusk": "^8.24|^9.1",
+                "phpunit/phpunit": "^10.4",
+                "psy/psysh": "^0.11.22|^0.12"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Livewire\\LivewireServiceProvider"
+                    ],
+                    "aliases": {
+                        "Livewire": "Livewire\\Livewire"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Livewire\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Caleb Porzio",
+                    "email": "calebporzio@gmail.com"
+                }
+            ],
+            "description": "A front-end framework for Laravel.",
+            "support": {
+                "issues": "https://github.com/livewire/livewire/issues",
+                "source": "https://github.com/livewire/livewire/tree/v3.5.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/livewire",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-05-21T13:39:04+00:00"
+        },
+        {
+            "name": "livewire/volt",
+            "version": "v1.6.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/livewire/volt.git",
+                "reference": "894ce197c114119b8044945963d861218c846205"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/livewire/volt/zipball/894ce197c114119b8044945963d861218c846205",
+                "reference": "894ce197c114119b8044945963d861218c846205",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^10.38.2|^11.0",
+                "livewire/livewire": "^3.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "laravel/folio": "^1.1",
+                "mockery/mockery": "^1.6",
+                "orchestra/testbench": "^8.15.0|^9.0",
+                "pestphp/pest": "^2.9.5",
+                "phpstan/phpstan": "^1.10"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Livewire\\Volt\\VoltServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "functions.php"
+                ],
+                "psr-4": {
+                    "Livewire\\Volt\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                },
+                {
+                    "name": "Nuno Maduro",
+                    "email": "nuno@laravel.com"
+                }
+            ],
+            "description": "An elegantly crafted functional API for Laravel Livewire.",
+            "homepage": "https://github.com/livewire/volt",
+            "keywords": [
+                "laravel",
+                "livewire",
+                "volt"
+            ],
+            "support": {
+                "issues": "https://github.com/livewire/volt/issues",
+                "source": "https://github.com/livewire/volt"
+            },
+            "time": "2024-05-27T14:03:07+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -6014,6 +6162,74 @@
                 }
             ],
             "time": "2023-11-03T12:00:00+00:00"
+        },
+        {
+            "name": "fly-apps/dockerfile-laravel",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fly-apps/dockerfile-laravel.git",
+                "reference": "1f642e5df744cc9bf106801b28fb530c451ea0b8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fly-apps/dockerfile-laravel/zipball/1f642e5df744cc9bf106801b28fb530c451ea0b8",
+                "reference": "1f642e5df744cc9bf106801b28fb530c451ea0b8",
+                "shasum": ""
+            },
+            "require-dev": {
+                "illuminate/view": "^10.0",
+                "laravel-zero/framework": "^10.2",
+                "laravel/pint": "^1.13",
+                "mockery/mockery": "^1.6",
+                "nunomaduro/termwind": "^1.15.1",
+                "pestphp/pest": "^2.22",
+                "phpspec/php-diff": "^1.1"
+            },
+            "bin": [
+                "builds/dockerfile-laravel"
+            ],
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "App\\": "app/",
+                    "Database\\Seeders\\": "database/seeders/",
+                    "Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Fidao",
+                    "email": "fideloper@gmail.com"
+                },
+                {
+                    "name": "Kathryn Anne Tan",
+                    "email": "kathryn@fly.io"
+                },
+                {
+                    "name": "Sam Ruby",
+                    "email": "rubys@fly.io"
+                }
+            ],
+            "description": "Dockerfile generator and Fly.io helper.",
+            "homepage": "https://fly.io/docs/laravel",
+            "keywords": [
+                "Fly.io",
+                "cli",
+                "docker",
+                "dockerfile",
+                "generate",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/fly-apps/dockerfile-laravel/issues",
+                "source": "https://github.com/fly-apps/dockerfile-laravel/tree/1.0.5"
+            },
+            "time": "2024-05-27T13:09:56+00:00"
         },
         {
             "name": "hamcrest/hamcrest-php",
