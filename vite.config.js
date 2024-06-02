@@ -9,6 +9,6 @@ export default defineConfig({
         }),
     ],
     server: {
-        origin: "https://laracamp.fly.dev"
-    }
+        origin: 'https://laracamp.fly.dev',
+      },
 });

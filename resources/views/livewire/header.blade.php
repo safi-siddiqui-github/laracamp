@@ -8,7 +8,7 @@ use function Livewire\Volt\{state};
 
 <div class="flex px-10 pt-1 justify-between items-center">
     <a href="">
-        <img src="{{asset('images/logo.svg')}}" alt="logo" class="w-20 h-20">
+        <img src="{{secure_asset('images/logo.svg')}}" alt="logo" class="w-20 h-20">
     </a>
 
     <div class="">
@@ -21,7 +21,7 @@ use function Livewire\Volt\{state};
         </a>
         @else
         <a href="{{route('google_redirect')}}" class="rounded-full border pl-2 pr-4 py-1 flex items-center gap-1 hover:border-black">
-            <img src="{{asset('images/google.svg')}}" alt="google" class="w-10 h-10">
+            <img src="{{secure_asset('images/google.svg')}}" alt="google" class="w-10 h-10">
             <span>Continue with</span>
             <span class="font-semibold">Google</span>
         </a>
