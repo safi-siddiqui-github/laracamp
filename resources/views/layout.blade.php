@@ -10,6 +10,7 @@
 </head>
 
 <body class="antialiased">
+    <livewire:header />
     @yield('content')
 </body>
 
