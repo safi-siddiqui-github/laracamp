@@ -11,7 +11,7 @@
 
 <body class="antialiased">
 
-    <div class="px-20">
+    <div class="xl:px-20 lg:px-10 px-5">
 
         <div class="flex justify-end gap-5 text-rb-blue py-4 text-xs font-semibold tracking-wider">
             <a href="" class=" underline hover:no-underline flex items-center gap-1">
@@ -31,12 +31,12 @@
         <div class="flex items-center justify-between sticky">
             <img src="{{asset('images/bank/bank-full-logo.svg')}}" alt="logo" class="">
 
-            <div class="flex gap-10 relative">
+            <div class="flex xl:gap-10 lg:gap-6 md:gap-2 relative">
 
                 <div class="group/item-personal">
                     <button class=" text-rb-blue hover:underline underline-offset-4 font-medium">PERSONAL</button>
                     <div class="invisible group-hover/item-personal:visible absolute left-0">
-                        <div class="flex gap-14 py-10 px-14 bg-gradient-to-br from-rb-blue to-rb-blue-light mt-5 rounded ">
+                        <div class="flex xl:gap-14 xl:py-10 xl:px-14 gap-10 py-6 px-10 bg-gradient-to-br from-rb-blue to-rb-blue-light mt-5 rounded ">
                             <div class="flex flex-col gap-2 font-medium tracking-wider">
                                 <h3 class="text-rb-green-light cursor-default">ACCOUNTS</h3>
                                 <div class="flex flex-col items-start gap-2 text-white text-sm min-w-max">
@@ -65,7 +65,7 @@
                 <div class="group/item-business">
                     <button class=" text-rb-blue hover:underline underline-offset-4 font-medium">BUSINESS</button>
                     <div class="invisible group-hover/item-business:visible absolute left-0">
-                        <div class="flex gap-14 py-10 px-14 bg-gradient-to-br from-rb-blue to-rb-blue-light mt-5 rounded ">
+                        <div class="flex xl:gap-14 xl:py-10 xl:px-14 gap-10 py-6 px-10 bg-gradient-to-br from-rb-blue to-rb-blue-light mt-5 rounded ">
                             <div class="flex flex-col gap-2 font-medium tracking-wider">
                                 <h3 class="text-rb-green-light cursor-default">ACCOUNTS</h3>
                                 <div class="flex flex-col items-start gap-2 text-white text-sm min-w-max">
@@ -106,7 +106,7 @@
                 <div class="group/item-services relative">
                     <button class=" text-rb-blue hover:underline underline-offset-4 font-medium">SERVICES</button>
                     <div class="invisible group-hover/item-services:visible absolute left-0">
-                        <div class="flex gap-14 py-10 px-14 bg-gradient-to-br from-rb-blue to-rb-blue-light mt-5 rounded ">
+                        <div class="flex xl:gap-14 xl:py-10 xl:px-14 gap-10 py-6 px-10 bg-gradient-to-br from-rb-blue to-rb-blue-light mt-5 rounded ">
                             <div class="flex flex-col gap-2 font-medium tracking-wider">
                                 <h3 class="text-rb-green-light cursor-default">DIGITAL</h3>
                                 <div class="flex flex-col items-start gap-2 text-white text-sm min-w-max">
@@ -125,10 +125,10 @@
                     </div>
                 </div>
 
-                <div class="group/item-wealth-management relative">
+                <div class="group/item-wealth-management ">
                     <button class=" text-rb-blue hover:underline underline-offset-4 font-medium">WEALTH</button>
-                    <div class="invisible group-hover/item-wealth-management:visible absolute left-0">
-                        <div class="flex gap-14 py-10 px-14 bg-gradient-to-br from-rb-blue to-rb-blue-light mt-5 rounded ">
+                    <div class="invisible group-hover/item-wealth-management:visible absolute right-0">
+                        <div class="flex xl:gap-14 xl:py-10 xl:px-14 gap-10 py-6 px-10 bg-gradient-to-br from-rb-blue to-rb-blue-light mt-5 rounded ">
                             <div class="flex flex-col gap-2 font-medium tracking-wider">
                                 <h3 class="text-rb-green-light cursor-default">MANAGEMENT</h3>
                                 <div class="flex flex-col items-start gap-2 text-white text-sm min-w-max">
@@ -146,7 +146,7 @@
                 <div class="group/item-about relative">
                     <button class=" text-rb-blue hover:underline underline-offset-4 font-medium">ABOUT</button>
                     <div class="invisible group-hover/item-about:visible absolute right-0">
-                        <div class="flex gap-14 py-10 px-14 bg-gradient-to-br from-rb-blue to-rb-blue-light mt-5 rounded ">
+                        <div class="flex xl:gap-14 xl:py-10 xl:px-14 gap-10 py-6 px-10 bg-gradient-to-br from-rb-blue to-rb-blue-light mt-5 rounded ">
                             <div class="flex flex-col gap-2 font-medium tracking-wider">
                                 <h3 class="text-rb-green-light cursor-default">RIVERVIEW</h3>
                                 <div class="flex flex-col items-start gap-2 text-white text-sm min-w-max">
@@ -248,17 +248,20 @@
     const searchIconToggle = document.querySelector('#search-icon-toggle');
     const loginBtn = document.querySelector('#login-btn');
     const loginBtnToggle = document.querySelector('#login-btn-toggle');
+    const bodyTag = document.querySelector('body');
 
     searchIcon.addEventListener('click', () => {
         searchIconToggle.classList.toggle('visible')
         searchIconToggle.classList.toggle('invisible')
         if (loginBtnToggle.classList.contains('visible')) {
+            loginBtn.textContent = 'LOGIN';
             loginBtnToggle.classList.remove('visible')
             loginBtnToggle.classList.add('invisible')
         }
     })
 
     loginBtn.addEventListener('click', () => {
+        loginBtn.textContent == 'LOGIN' ? loginBtn.textContent = 'CLOSE' : loginBtn.textContent = 'LOGIN';
         loginBtnToggle.classList.toggle('visible')
         loginBtnToggle.classList.toggle('invisible')
         if (searchIconToggle.classList.contains('visible')) {
