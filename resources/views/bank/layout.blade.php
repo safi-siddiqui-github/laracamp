@@ -238,6 +238,174 @@
         </div>
 
         @yield('content')
+
+        <div class="xl:px-20 lg:px-10 px-5 flex flex-col gap-10 bg-rb-blue p-10">
+
+            <div class="flex gap-8">
+
+                <div class="flex flex-col gap-10">
+                    <div class="flex flex-col gap-2 font-medium tracking-wider">
+                        <h3 class="text-rb-green-light cursor-default">PERSONAL ACCOUNTS</h3>
+                        <div class="flex flex-col items-start gap-2 text-white text-sm">
+                            <a href="#" class="hover:underline">Checking</a>
+                            <a href="#" class="hover:underline">Savings</a>
+                            <a href="#" class="hover:underline">Money Market</a>
+                            <a href="#" class="hover:underline">CDs</a>
+                            <a href="#" class="hover:underline">IRAs</a>
+                            <a href="#" class="hover:underline">CDARs</a>
+                            <a href="#" class="hover:underline">Debit Card</a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-2 font-medium tracking-wider">
+                        <h3 class="text-rb-green-light cursor-default">BUSINESS ACCOUNTS</h3>
+                        <div class="flex flex-col items-start gap-2 text-white text-sm">
+                            <a href="#" class="hover:underline">Checking</a>
+                            <a href="#" class="hover:underline">Savings, Money Market and CDs</a>
+                            <a href="#" class="hover:underline">Debit Card</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-10">
+                    <div class="flex flex-col gap-2 font-medium tracking-wider">
+                        <h3 class="text-rb-green-light cursor-default">PERSONAL LENDING</h3>
+                        <div class="flex flex-col items-start gap-2 text-white text-sm">
+                            <a href="#" class="hover:underline">Mortgage Loans</a>
+                            <a href="#" class="hover:underline">Home Equity</a>
+                            <a href="#" class="hover:underline">Consumer Loans</a>
+                            <a href="#" class="hover:underline">Credit Cards</a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-2 font-medium tracking-wider">
+                        <h3 class="text-rb-green-light cursor-default">BUSINESS LENDING</h3>
+                        <div class="flex flex-col items-start gap-2 text-white text-sm">
+                            <a href="#" class="hover:underline">Commercial Loans</a>
+                            <a href="#" class="hover:underline">Lines of Credit</a>
+                            <a href="#" class="hover:underline">Real Estate Loans</a>
+                            <a href="#" class="hover:underline">Small Business Loans</a>
+                            <a href="#" class="hover:underline">Credit Cards</a>
+                            <a href="#" class="hover:underline">Tenant Improvement</a>
+                            <a href="#" class="hover:underline">Financing</a>
+                            <a href="#" class="hover:underline">Builder & Developer Banking</a>
+                            <a href="#" class="hover:underline">HOA Loans</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-10">
+                    <div class="flex flex-col gap-2 font-medium tracking-wider">
+                        <h3 class="text-rb-green-light cursor-default">SERVICES</h3>
+                        <div class="flex flex-col items-start gap-2 text-white text-sm">
+                            <a href="#" class="hover:underline">Online and Mobile</a>
+                            <a href="#" class="hover:underline">Banking</a>
+                            <a href="#" class="hover:underline">Overdraft Protection</a>
+                            <a href="#" class="hover:underline">Financial Calculators</a>
+                            <a href="#" class="hover:underline">Digital Payments</a>
+                            <a href="#" class="hover:underline">ID TheftSmart</a>
+                            <a href="#" class="hover:underline">Bill Pay</a>
+                            <a href="#" class="hover:underline">Safe Dposit</a>
+                            <a href="#" class="hover:underline">Paperless Statements</a>
+                            <a href="#" class="hover:underline">Financial Wellness</a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-2 font-medium tracking-wider">
+                        <h3 class="text-rb-green-light cursor-default">TREASURY MANAGEMENT</h3>
+                        <div class="flex flex-col items-start gap-2 text-white text-sm">
+                            <a href="#" class="hover:underline">Merchant Services</a>
+                            <a href="#" class="hover:underline">Cash Management</a>
+                            <a href="#" class="hover:underline">Commercial Banking</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-10">
+                    <div class="flex flex-col gap-2 font-medium tracking-wider">
+                        <h3 class="text-rb-green-light cursor-default">WASHINGTON LOCATIONS</h3>
+                        <div class="flex flex-col items-start gap-2 text-white text-sm">
+                            <a href="#" class="hover:underline">Battle Ground</a>
+                            <a href="#" class="hover:underline">Camas</a>
+                            <a href="#" class="hover:underline">Cascade Park</a>
+                            <a href="#" class="hover:underline">Golden Dale</a>
+                            <a href="#" class="hover:underline">Hazel Dell</a>
+                            <a href="#" class="hover:underline">Orchards</a>
+                            <a href="#" class="hover:underline">Ridgefield</a>
+                            <a href="#" class="hover:underline">Salmon Creek</a>
+                            <a href="#" class="hover:underline">Stevenson</a>
+                            <a href="#" class="hover:underline">Tech Center</a>
+                            <a href="#" class="hover:underline">Vancouver main</a>
+                            <a href="#" class="hover:underline">Washougal</a>
+                            <a href="#" class="hover:underline">White Salmon</a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-2 font-medium tracking-wider">
+                        <h3 class="text-rb-green-light cursor-default">OREGON LOCATIONS</h3>
+                        <div class="flex flex-col items-start gap-2 text-white text-sm">
+                            <a href="#" class="hover:underline">Aumsville</a>
+                            <a href="#" class="hover:underline">Gateway</a>
+                            <a href="#" class="hover:underline">Gresham</a>
+                            <a href="#" class="hover:underline">Tualatin</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-10">
+                    <div class="flex flex-col gap-2 font-medium tracking-wider">
+                        <h3 class="text-rb-green-light cursor-default">ABOUT</h3>
+                        <div class="flex flex-col items-start gap-2 text-white text-sm">
+                            <a href="#" class="hover:underline">Our Story</a>
+                            <a href="#" class="hover:underline">Community</a>
+                            <a href="#" class="hover:underline">Leadership</a>
+                            <a href="#" class="hover:underline">Investor Relations</a>
+                            <a href="#" class="hover:underline">Careers</a>
+                            <a href="#" class="hover:underline">Media</a>
+                            <a href="#" class="hover:underline">Riverview Bank Blog</a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-2 font-medium tracking-wider">
+                        <h3 class="text-rb-green-light cursor-default">CUSTOMER CARE</h3>
+                        <div class="flex flex-col items-start gap-2 text-white text-sm">
+                            <a href="#" class="hover:underline">Contact Us</a>
+                            <a href="#" class="hover:underline">Privacy Policy</a>
+                            <a href="#" class="hover:underline">Security Center</a>
+                            <a href="#" class="hover:underline">Foreclosure Help</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="flex flex-col items-center md:flex-row md:justify-between gap-10">
+                <div class="flex flex-col md:flex-row items-center gap-5">
+                    <div class="flex gap-2 items-center">
+                        <img src="{{asset('images/bank/icons8-facebook-50-white.png')}}" alt="icons8-facebook-50-white" class="w-8">
+                        <img src="{{asset('images/bank/icons8-instagram-50-white.png')}}" alt="icons8-instagram-50-white" class="w-8">
+                        <img src="{{asset('images/bank/icons8-linked-in-50-white.png')}}" alt="icons8-linked-in-50-white" class="w-8">
+                    </div>
+                    <div class="font-medium text-white text-sm text-center md:text-left">
+                        <p>Riverview Bank</p>
+                        <p>900 Washington Street #900</p>
+                        <p>Vancouver, WA 98660</p>
+                        <p>Routing #323370666 | NMLS #45076</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-center gap-5">
+                    <p class="font-medium text-white text-sm text-center md:text-left">&copy; Copyright 2024. All Rights Reserved</p>
+                    <div class="flex gap-4 items-center">
+                        <img src="{{asset('images/bank/ehl-logo-white.png')}}" alt="ehl-logo-white" class="w-8">
+                        <img src="{{asset('images/bank/fdic-logo-white.png')}}" alt="fdic-logo-white" class="w-10">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 </body>
 

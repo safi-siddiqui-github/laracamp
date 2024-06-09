@@ -1,6 +1,6 @@
 @extends('bank.layout')
 @section('content')
-<main class="flex flex-col gap-20 py-10">
+<main class="flex flex-col gap-20 pt-10">
 
     <section class="flex gap-5">
         <div class="w-2/3 relative">
@@ -165,6 +165,7 @@
 
     <section class="flex relative">
         <img src="{{asset('images/bank/mountain-placeholder.png')}}" alt="mountain-placeholder" class="w-full object-contain">
+        <img src="{{asset('images/bank/body-footer-placeholder.png')}}" alt="body-footer-placeholder" class="w-full absolute bottom-0 left-0 object-contain">
 
         <div class="absolute left-0 bottom-0 flex gap-10 px-20 pb-36">
             <div class="flex flex-col gap-6 items-center w-1/2">
