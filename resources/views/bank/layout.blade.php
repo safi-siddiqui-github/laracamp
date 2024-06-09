@@ -28,7 +28,7 @@
             </a>
         </div>
 
-        <div class="flex items-center justify-between sticky">
+        <div class="flex items-center justify-between sticky z-50">
             <img src="{{asset('images/bank/bank-full-logo.svg')}}" alt="logo" class="">
 
             <div class="flex xl:gap-10 lg:gap-6 md:gap-2 relative">
@@ -185,7 +185,7 @@
                 </div>
 
                 <div class="">
-                    <button id="login-btn" class="px-5 py-2 font-medium rounded bg-rb-blue-light hover:bg-rb-blue-light-hover tracking-wide text-white">LOGIN</button>
+                    <button id="login-btn" class="blue-btn-medium">LOGIN</button>
                     <div id="login-btn-toggle" class="invisible absolute right-0">
                         <div class="flex flex-col p-10 bg-gradient-to-br from-rb-blue to-rb-blue-light mt-3 rounded gap-4 w-96">
                             <h2 class="text-xl text-rb-green-light font-medium">ACCOUNT LOGIN</h2>
@@ -222,10 +222,8 @@
                             </div>
 
                             <div class="flex justify-end">
-                                <!-- <button id="signin-btn" class="px-5 py-2 font-medium rounded hover:bg-rb-blue-light-hover bg-rb-blue tracking-wide text-white">SIGN IN</button> -->
-                                <a href="{{route('bank.dashboard_page')}}" id="signin-btn" class="px-5 py-2 font-medium rounded hover:bg-rb-blue-light-hover bg-rb-blue tracking-wide text-white">SIGN IN</a>
+                                <a href="{{route('bank.dashboard_page')}}" id="signin-btn" class="sky-btn-medium">SIGN IN</a>
                             </div>
-
 
                             <div class="flex flex-col text-white font-medium text-sm items-start gap-1">
                                 <a href="#" class="underline hover:no-underline">Are You A First Time User?</a>

@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    .sky-btn-small {
+        @apply px-5 py-2 font-semibold text-xs rounded hover:bg-rb-sky-light-hover bg-rb-sky-light tracking-wider text-rb-blue hover:text-white
+    }
+    .sky-btn-medium {
+        @apply px-5 py-2 font-semibold rounded hover:bg-rb-sky-light-hover bg-rb-sky-light tracking-wider text-rb-blue hover:text-white
+    }
+    .blue-btn-small {
+        @apply px-5 py-2 font-medium text-xs rounded hover:bg-rb-blue-light-hover bg-rb-blue-light tracking-wide text-white
+    }
+    .blue-btn-medium {
+        @apply px-5 py-2 font-medium rounded hover:bg-rb-blue-light-hover bg-rb-blue-light tracking-wide text-white
+    }
+
+    .text-extra-large {
+        @apply text-4xl font-medium
+    }
+
+    .text-large {
+        @apply text-2xl tracking-wide
+    }
+
+    .text-medium {
+        @apply tracking-wide
+    }
+
+}
