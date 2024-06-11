@@ -261,7 +261,7 @@
             <span>Contact Us</span>
         </a>
     </div>
-    <div class="sticky top-0 w-full z-20 horizontal-alignment bg-white">
+    <div class="hidden lg:flex sticky top-0 w-full z-20 horizontal-alignment bg-white">
         <div class="flex items-center justify-between bg-white pb-2 border-b">
             <img src="{{asset('images/bank/bank-full-logo.svg')}}" alt="bank-full-logo" class="w-32 lg:w-40">
 
