@@ -12,7 +12,7 @@
 <body class="antialiased">
 
     <!-- Small Screen Header -->
-    <header class="flex justify-between items-center px-4 py-4 md:px-10 relative lg:hidden">
+    <header class="flex justify-between items-center px-4 py-4 md:px-10 relative lg:hidden z-10">
 
         <img src="{{asset('images/bank/bank-full-logo.svg')}}" alt="bank-full-logo" class="w-36">
 
@@ -25,7 +25,7 @@
             </button>
         </div>
 
-        <div id="menu-sm-screen" class="absolute top-0 left-0 w-full h-0 overflow-scroll transition-all ease-in-out duration-300">
+        <div id="menu-sm-screen" class="absolute top-0 left-0 w-full h-0 overflow-hidden z-20">
 
             <div class="flex flex-col bg-white gap-5 p-4 h-full">
 
@@ -179,9 +179,9 @@
             </div>
         </div>
 
-        <div id="login-menu-sm-screen" class="absolute top-0 left-0 w-full h-0 overflow-hidden transition-all ease-in-out duration-300">
+        <div id="login-menu-sm-screen" class="absolute top-0 left-0 w-full h-0 overflow-hidden z-20">
 
-            <div class="flex flex-col bg-white gap-5 p-5 h-full bg-gradient-to-b from-rb-blue to-rb-blue-light overflow-scroll">
+            <div class="flex flex-col bg-white gap-5 p-5 h-full bg-gradient-to-b from-rb-blue to-rb-blue-light">
                 <div class="flex justify-end">
                     <button id="cancel-login-menu-sm-screen" class="rounded-full p-1.5 bg-rb-blue-light">
                         <img src="{{asset('images/bank/icons8-cross-50-white.png')}}" alt="icons8-cross-50-white" class="w-9 h-9">
@@ -232,7 +232,7 @@
             </div>
         </div>
 
-        <div id="search-menu-sm-screen" class="absolute top-24 left-0 w-full h-0 overflow-hidden transition-all ease-in-out duration-300">
+        <div id="search-menu-sm-screen" class="absolute top-24 left-0 w-full h-0 overflow-hidden transition-all ease-in-out duration-300 z-10">
             <div class="text-rb-bluefont-medium px-4 md:px-10">
 
                 <div class="flex flex-col bg-white p-2 border border-rb-blue rounded">
@@ -247,24 +247,22 @@
     </header>
 
     <!-- Large Screen Header -->
-    <header class="hidden lg:flex flex-col px-10 py-4 xl:px-16">
-
-        <div class="flex justify-end gap-5 text-rb-blue text-xs font-semibold tracking-wider">
-            <a href="" class=" underline hover:no-underline flex items-center gap-1">
-                <img src="{{asset('images/bank/icons8-phone-30.png')}}" alt="icons8-phone-30" class="w-4 h-4">
-                <span>800-822-2076</span>
-            </a>
-            <a href="" class=" underline hover:no-underline flex items-center gap-1">
-                <img src="{{asset('images/bank/icons8-location-64.png')}}" alt="icons8-location-64" class="w-4 h-4">
-                <span>Locations</span>
-            </a>
-            <a href="" class=" underline hover:no-underline flex items-center gap-1">
-                <img src="{{asset('images/bank/icons8-email-64.png')}}" alt="icons8-email-64" class="w-5 h-5">
-                <span>Contact Us</span>
-            </a>
-        </div>
-
-        <div class="flex items-center justify-between">
+    <div class="hidden lg:flex justify-end gap-5 text-rb-blue text-xs font-semibold tracking-wider pt-4 horizontal-alignment">
+        <a href="" class=" underline hover:no-underline flex items-center gap-1">
+            <img src="{{asset('images/bank/icons8-phone-30.png')}}" alt="icons8-phone-30" class="w-4 h-4">
+            <span>800-822-2076</span>
+        </a>
+        <a href="" class=" underline hover:no-underline flex items-center gap-1">
+            <img src="{{asset('images/bank/icons8-location-64.png')}}" alt="icons8-location-64" class="w-4 h-4">
+            <span>Locations</span>
+        </a>
+        <a href="" class=" underline hover:no-underline flex items-center gap-1">
+            <img src="{{asset('images/bank/icons8-email-64.png')}}" alt="icons8-email-64" class="w-5 h-5">
+            <span>Contact Us</span>
+        </a>
+    </div>
+    <div class="sticky top-0 w-full z-20 horizontal-alignment bg-white">
+        <div class="flex items-center justify-between bg-white pb-2 border-b">
             <img src="{{asset('images/bank/bank-full-logo.svg')}}" alt="bank-full-logo" class="w-32 lg:w-40">
 
             <div class="flex lg:gap-10 gap-5 relative">
@@ -472,8 +470,7 @@
                 </div>
             </div>
         </div>
-
-    </header>
+    </div>
 
     @yield('content')
 
@@ -637,7 +634,6 @@
             </div>
 
         </div>
-
 
         <!-- Footer Large Screen -->
         <div class="hidden lg:flex gap-8">
@@ -866,24 +862,24 @@
 
     openMenuSmScreen.addEventListener('click', () => {
         menuSmScreen.classList.remove('h-0')
-        menuSmScreen.classList.add('h-screen')
+        menuSmScreen.classList.add('h-fit')
     })
     cancelMenuSmScreen.addEventListener('click', () => {
-        menuSmScreen.classList.remove('h-screen')
+        menuSmScreen.classList.remove('h-fit')
         menuSmScreen.classList.add('h-0')
     })
     openLoginMenuSmScreen.addEventListener('click', () => {
         loginMenuSmScreen.classList.remove('h-0')
-        loginMenuSmScreen.classList.add('h-screen')
+        loginMenuSmScreen.classList.add('h-fit')
     })
 
     cancelLoginMenuSmScreen.addEventListener('click', () => {
-        loginMenuSmScreen.classList.remove('h-screen')
+        loginMenuSmScreen.classList.remove('h-fit')
         loginMenuSmScreen.classList.add('h-0')
     })
     toggleSearchMenuSmScreen.addEventListener('click', () => {
         searchMenuSmScreen.classList.toggle('h-0')
-        // searchMenuSmScreen.classList.toggle('h-[100px]')
+        searchMenuSmScreen.classList.toggle('h-[80px]')
     })
 
     personalMenuToggleSmScreen.addEventListener('click', () => {
