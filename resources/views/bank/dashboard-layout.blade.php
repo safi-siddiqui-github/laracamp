@@ -168,6 +168,9 @@
     if (location.href == "{{route('bank.statement_page')}}") {
         toggleAccountMenu();
         toggleAccountStatementMenu()
+    } else if (location.href == "{{secure_url('bank/statement')}}") {
+        toggleAccountMenu();
+        toggleAccountStatementMenu()
     }
 </script>
 
