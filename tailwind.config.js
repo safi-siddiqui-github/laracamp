@@ -26,7 +26,11 @@ export default {
         'rb-yellow-light-border': '#e9e8dd',
         'rb-yellow-light-back': '#fffef7',
         'rb-peach': '#ffc9a1',
-      }
+      },
+      screens: {
+        'xs': '425px',
+        '3xl': '1600px',
+      },
     }
   },
   plugins: [],

@@ -13,10 +13,17 @@ class WebController extends Controller
     {
         return view('home');
     }
+
+    public function login_page()
+    {
+        return view('home');
+    }
+    
     public function google_redirect()
     {
         return Socialite::driver('google')->redirect();
     }
+
     public function google_callback()
     {
         $google_user = Socialite::driver('google')->user();
