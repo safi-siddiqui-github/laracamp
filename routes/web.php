@@ -17,4 +17,6 @@ Route::prefix('bank')->name('bank.')->controller(BankController::class)->group(f
     Route::get('/statement', 'bank_statement_page')->name('statement_page');
 });
 
-Route::view('bank/pics', 'bank.pic');
+Route::view('page-one', 'landing.page-one');
+Route::view('page-two', 'landing.page-two');
+Route::view('page-four', 'landing.page-four');
