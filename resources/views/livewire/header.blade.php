@@ -66,7 +66,7 @@ use function Livewire\Volt\{state};
         </div>
 
         <!-- Menu -->
-        <div class="hidden md:hidden fixed w-44 xs:w-64 sm:w-72 md:w-96 top-0 right-0 flex-col gap-4 px-5 py-4 text-lg font-medium border-l h-full bg-white" x-ref="menu">
+        <div class="hidden md:hidden fixed w-44 xs:w-64 sm:w-72 md:w-96 top-9 right-0 flex-col gap-4 px-5 py-4 text-lg font-medium border-l h-full bg-white" x-ref="menu">
 
             <div class="flex justify-end sm:justify-between items-center">
 

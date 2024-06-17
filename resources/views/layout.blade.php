@@ -9,7 +9,8 @@
     @vite('resources/css/app.css')
 </head>
 
-<body class="antialiased">
+<body class="antialiased scrollbar">
+    <livewire:banner />
     <livewire:header />
     @yield('content')
 </body>

@@ -35,21 +35,34 @@
         @apply px-4 md:px-10 lg:px-10 xl:px-16
     }
 
+    .gradient-one {
+        @apply bg-gradient-to-br from-slate-900 to-slate-800
+    }
+
+    .btn-black {
+        @apply bg-black font-medium py-2 px-4 text-white rounded text-center
+    }
+    .btn-black-outline {
+        @apply font-medium py-2 px-4 rounded text-center border-2 border-black
+    }
 }
 
 .scrollbar::-webkit-scrollbar-track {
     /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
     /* background-color: #F5F5F5; */
+    background-color: #000;
 }
 
 .scrollbar::-webkit-scrollbar {
-    /* width: 2px; */
+    width: 4px;
     height: 4px;
-    background-color: #F5F5F5;
+    /* background-color: #F5F5F5; */
+    background-color: transparent;
 }
 
 .scrollbar::-webkit-scrollbar-thumb {
-    background-color: #ffc9a1;
+    background-color: #000;
+    /* background-color: #ffc9a1; */
 }
 
 /* .scrollbar {
