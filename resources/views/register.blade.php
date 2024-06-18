@@ -42,7 +42,7 @@
                 <input type="password" id="password" name="password" class="rounded border-2 p-2">
                 @error('password') <p class="text-red-500 font-medium text-sm">{{$message}}</p> @enderror
             </div>
-            <button class="text-center font-medium bg-black text-white rounded p-2">Sign up</button>
+            <button class="btn-black">Sign up</button>
         </form>
 
         <div class="flex flex-col gap-4">

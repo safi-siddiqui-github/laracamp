@@ -35,16 +35,59 @@
         @apply px-4 md:px-10 lg:px-10 xl:px-16
     }
 
-    .gradient-one {
+    /* Website */
+    .gradient-slate {
         @apply bg-gradient-to-br from-slate-900 to-slate-800
+    }
+
+    .gradient-red-sky {
+        @apply bg-gradient-to-br from-red-900 to-sky-900
+    }
+
+    .rounded-left {
+        @apply lg:rounded-tl-lg lg:rounded-bl-lg
+    }
+
+    .rounded-right {
+        @apply lg:rounded-tr-lg lg:rounded-br-lg
     }
 
     .btn-black {
         @apply bg-black font-medium py-2 px-4 text-white rounded text-center
     }
+
     .btn-black-outline {
         @apply font-medium py-2 px-4 rounded text-center border-2 border-black
     }
+
+    .text-heading {
+        @apply text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-semibold
+    }
+
+    .text-subheading {
+        @apply text-lg sm:text-xl lg:text-2xl xl:text-3xl
+    }
+
+    .text-small {
+        @apply text-sm sm:text-base lg:text-lg
+    }
+
+    .gap-heading {
+        @apply gap-6 sm:gap-10 lg:gap-12
+    }
+
+    .gap-sub-div {
+        @apply gap-10 lg:gap-16 xl:gap-20 px-5
+    }
+
+    .pading-sub-div {
+        @apply 
+    }
+
+    .side-image-large {
+        @apply h-72 sm:h-96 lg:h-[700px] xl:h-[800px] w-full lg:w-1/3
+    }
+
 }
 
 .scrollbar::-webkit-scrollbar-track {
