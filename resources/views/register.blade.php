@@ -11,7 +11,7 @@
 
 <body class="antialiased flex flex-col items-center justify-center py-10 md:py-20 overflow-scroll scrollbar lg:h-screen">
 
-    <div class="flex flex-col gap-10 p-3 w-full xs:w-96">
+    <div class="flex flex-col gap-10 p-5 w-full xs:w-96">
 
         <div class="flex flex-col gap-6">
             <a href="{{route('home_page')}}" class="self-start">

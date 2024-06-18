@@ -41,15 +41,23 @@
     }
 
     .gradient-red-sky {
-        @apply bg-gradient-to-br from-red-900 to-sky-900
+        @apply from-red-900 to-sky-900
+    }
+
+    .gradient-violet-orange {
+        @apply from-violet-500 to-orange-500
+    }
+
+    .gradient-yellow-sky {
+        @apply from-yellow-500 to-sky-500
     }
 
     .rounded-left {
-        @apply lg:rounded-tl-lg lg:rounded-bl-lg
+        @apply rounded-tl-lg rounded-bl-lg
     }
 
     .rounded-right {
-        @apply lg:rounded-tr-lg lg:rounded-br-lg
+        @apply rounded-tr-lg rounded-br-lg
     }
 
     .btn-black {
@@ -77,15 +85,19 @@
     }
 
     .gap-sub-div {
-        @apply gap-10 lg:gap-16 xl:gap-20 px-5
+        @apply gap-10 lg:gap-16 xl:gap-20
     }
 
-    .pading-sub-div {
-        @apply 
+    .padding-sub-div {
+        @apply px-5 md:px-10
     }
 
     .side-image-large {
-        @apply h-72 sm:h-96 lg:h-[700px] xl:h-[800px] w-full lg:w-1/3
+        @apply h-72 sm:h-96 lg:h-[800px]
+    }
+
+    .side-stripes {
+        @apply h-[850px]
     }
 
 }
