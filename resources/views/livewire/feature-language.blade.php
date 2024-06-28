@@ -88,6 +88,5 @@ use function Livewire\Volt\{state};
 
         </div>
     </div>
-
     
 </div>

@@ -6,14 +6,40 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
 use Laravel\Socialite\Facades\Socialite;
+
+use function Pest\Laravel\json;
 
 class AuthController extends Controller
 {
+
+    public function register_user_api(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'email' => ['required', 'email'],
+            'password' => ['required'],
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json([
+                'error' => $validator->errors()->first()
+            ], 400);
+        }
+
+        return response()->json(['hi' => 'hi']);
+    }
+
+    public function login_user()
+    {
+        return view('login');
+    }
+
     public function login_page()
     {
         return view('login');
     }
+
     public function authenticate(Request $request)
     {
         return to_route('home_page');
@@ -24,14 +50,14 @@ class AuthController extends Controller
         // ]);
 
         // dd(Hash::make($request->input('password')));
-        
+
         // $user = new User();
         // $user->email = $request->input('email');
         // $user->password = Hash::make($request->input('password'));
         // $user->save();
- 
+
     }
-    
+
     public function register_page()
     {
         return view('register');
@@ -40,18 +66,18 @@ class AuthController extends Controller
     public function register_user(Request $request)
     {
         return to_route('home_page');
-        
+
         $credentials = $request->validate([
             'email' => ['required', 'email'],
             'password' => ['required'],
         ]);
- 
+
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
- 
+
             return redirect()->intended('dashboard');
         }
- 
+
         return back()->withErrors([
             'email' => 'The provided credentials do not match our records.',
         ])->onlyInput('email');
