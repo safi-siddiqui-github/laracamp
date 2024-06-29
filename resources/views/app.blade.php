@@ -9,13 +9,13 @@
     @inertiaHead
     @routes
     <script>
-        Ziggy.url = "{{ env('APP_URL') }}"
+        Ziggy.url = "https://laracamp.fly.dev"
+        console.log(Ziggy);
     </script>
 
 </head>
 
 <body>
-    <p>{{env('APP_URL')}}</p>
     @inertia
 </body>
 
