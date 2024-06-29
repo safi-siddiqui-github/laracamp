@@ -10,7 +10,6 @@
     @routes
     <script>
         Ziggy.url = "https://laracamp.fly.dev"
-        console.log(Ziggy);
     </script>
 
 </head>
