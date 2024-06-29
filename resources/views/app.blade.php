@@ -7,10 +7,11 @@
     @viteReactRefresh
     @vite('resources/js/app.jsx')
     @inertiaHead
-    @routes(nonce: Vite::cspNonce())
+    @routes
     <script>
-        
+        Ziggy.url = "{{ env('APP_URL') }}"
     </script>
+
 </head>
 
 <body>
