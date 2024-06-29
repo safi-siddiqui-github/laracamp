@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <p>{{env('APP_URL')}}</p>
     @inertia
 </body>
 
