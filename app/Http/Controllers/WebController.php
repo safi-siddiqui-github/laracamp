@@ -19,7 +19,7 @@ class WebController extends Controller
     {
         return Inertia::render('Home');
     }
-    
+
     public function react_dash_page()
     {
         return Inertia::render('Dashboard');
