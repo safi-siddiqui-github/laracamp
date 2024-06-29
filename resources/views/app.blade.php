@@ -7,7 +7,10 @@
     @viteReactRefresh
     @vite('resources/js/app.jsx')
     @inertiaHead
-    @routes
+    @routes(nonce: Vite::cspNonce())
+    <script>
+        
+    </script>
 </head>
 
 <body>
