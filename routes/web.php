@@ -9,6 +9,7 @@ Route::controller(WebController::class)->group(function () {
     Route::get('/', 'home_page')->name('home_page');
     Route::get('/react', 'react_page')->name('react_page');
     Route::get('/react_dash', 'react_dash_page')->name('react_dash_page');
+    Route::get('/kitchen', 'kitchen_page')->name('kitchen_page');
 });
 
 Route::controller(AuthController::class)->group(function () {

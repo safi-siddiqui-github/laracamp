@@ -24,4 +24,9 @@ class WebController extends Controller
     {
         return Inertia::render('Dashboard');
     }
+
+    public function kitchen_page()
+    {
+        return Inertia::render('Kitchen');
+    }
 }
